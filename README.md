@@ -1,4 +1,4 @@
-Note: This is a fork of nestjs-addons. Which is abandoned for years.
+Note: This is a fork of [nestjs-addons](https://github.com/nestjs-addons/platform). Which is abandoned for years.
 
 We in Team Finance team has updated it to work with modern frameworks and fixed the `in-memory-db` package to be able to publish to npm under `@trustswap/` namespace.
 
