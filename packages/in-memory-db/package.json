@@ -1,0 +1,32 @@
+{
+  "name": "@trustswap/in-memory-db",
+  "version": "3.0.3",
+  "license": "MIT",
+  "description": "Simple In-Memory DB Service for NestJS projects",
+  "author": "Wes Grimes",
+  "homepage": "https://github.com/nestjs-addons/platform",
+  "repository": "https://github.com/nestjs-addons/platform",
+  "schematics": "./dist/schematics/collection.json",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=9",
+    "@nestjs/core": ">=9",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": ">=6"
+  },
+  "keywords": [
+    "nestjs",
+    "nest",
+    "api",
+    "in-memory db",
+    "in-memory",
+    "prototyping",
+    "db",
+    "crud",
+    "rest",
+    "typescript",
+    "javascript"
+  ]
+}

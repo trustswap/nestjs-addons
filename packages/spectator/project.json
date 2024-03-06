@@ -1,0 +1,42 @@
+{
+  "name": "spectator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/spectator/src",
+  "projectType": "library",
+  "generators": {},
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/spectator/**/*.ts",
+          "packages/spectator/**/*.spec.ts",
+          "packages/spectator/**/*.spec.tsx",
+          "packages/spectator/**/*.spec.js",
+          "packages/spectator/**/*.spec.jsx",
+          "packages/spectator/**/*.d.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "packages/spectator/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "outputs": ["{workspaceRoot}/coverage/packages/spectator"]
+    },
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/spectator",
+        "tsConfig": "packages/spectator/tsconfig.lib.json",
+        "packageJson": "packages/spectator/package.json",
+        "main": "packages/spectator/src/index.ts",
+        "assets": ["packages/spectator/*.md"]
+      },
+      "outputs": ["{options.outputPath}"]
+    }
+  },
+  "tags": []
+}

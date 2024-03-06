@@ -1,0 +1,29 @@
+{
+  "name": "playground-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/playground-e2e/src",
+  "projectType": "application",
+  "prefix": "playground-e2e",
+  "generators": {},
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/playground-e2e/**/*.spec.ts",
+          "packages/playground-e2e/**/*.d.ts"
+        ]
+      }
+    },
+    "e2e": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "packages/playground-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "outputs": ["{workspaceRoot}/coverage/packages/playground-e2e"]
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["playground"]
+}

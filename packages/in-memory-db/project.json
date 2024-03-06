@@ -1,0 +1,49 @@
+{
+  "name": "in-memory-db",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/in-memory-db/src",
+  "projectType": "library",
+  "generators": {},
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/in-memory-db/**/*.ts",
+          "packages/in-memory-db/**/*.spec.ts",
+          "packages/in-memory-db/**/*.spec.tsx",
+          "packages/in-memory-db/**/*.spec.js",
+          "packages/in-memory-db/**/*.spec.jsx",
+          "packages/in-memory-db/**/*.d.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "packages/in-memory-db/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "outputs": ["{workspaceRoot}/coverage/packages/in-memory-db"]
+    },
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/in-memory-db",
+        "tsConfig": "packages/in-memory-db/tsconfig.lib.json",
+        "packageJson": "packages/in-memory-db/package.json",
+        "main": "packages/in-memory-db/src/index.ts",
+        "assets": [
+          "packages/in-memory-db/*.md",
+          {
+            "glob": "**/*.json",
+            "input": "packages/in-memory-db/src/schematics",
+            "output": "src/schematics"
+          }
+        ]
+      },
+      "outputs": ["{options.outputPath}"]
+    }
+  },
+  "tags": []
+}
