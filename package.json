@@ -26,7 +26,7 @@
     "commit": "git-cz",
     "workspace-generator": "nx workspace-generator",
     "build:in-memory-db": "nx build in-memory-db",
-    "publish:in-memory-db": "npm publish dist/packages/in-memory-db"
+    "publish:in-memory-db": "npm publish dist/packages/in-memory-db --access=public"
   },
   "private": true,
   "dependencies": {
@@ -39,7 +39,7 @@
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "^0.2.2",
     "rxjs": "^7.0.0"
   },
   "devDependencies": {
@@ -85,4 +85,3 @@
     }
   }
 }
-

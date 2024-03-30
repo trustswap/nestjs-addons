@@ -1,6 +1,6 @@
 {
   "name": "@trustswap/in-memory-db",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "license": "MIT",
   "description": "Simple In-Memory DB Service for NestJS projects",
   "author": "Wes Grimes",
@@ -13,7 +13,7 @@
   "peerDependencies": {
     "@nestjs/common": ">=9",
     "@nestjs/core": ">=9",
-    "reflect-metadata": "^0.2.0",
+    "reflect-metadata": "^0.2.2",
     "rxjs": ">=6"
   },
   "keywords": [
