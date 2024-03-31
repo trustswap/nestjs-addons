@@ -1,5 +1,5 @@
 {
-  "name": "@trustswap/in-memory-db",
+  "name": "@trustswap/nestjs-in-memory-db",
   "version": "3.0.5",
   "license": "MIT",
   "description": "Simple In-Memory DB Service for NestJS projects",
