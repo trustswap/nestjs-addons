@@ -42,3 +42,11 @@ Thumbs.db
 .docusaurus/
 .cache-loader/
 .nx/
+
+# others
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

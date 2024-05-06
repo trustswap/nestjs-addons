@@ -1,6 +1,6 @@
 {
   "name": "@trustswap/nestjs-in-memory-db",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "license": "MIT",
   "description": "Simple In-Memory DB Service for NestJS projects",
   "author": "Wes Grimes",
